@@ -1,5 +1,5 @@
 var express = require("express");
-
+var PORT = process.env.PORT || 4000;
 var app = express();
 var middleware = require("./middleware.js");
 
@@ -19,4 +19,4 @@ app.use(express.static(__dirname+"/public"));
 //console.log(__dirname);
 
 
-app.listen(4000);
+app.listen(PORT);
